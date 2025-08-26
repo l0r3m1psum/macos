@@ -45,4 +45,5 @@
 
 int main(void) {
     [NSApplication sharedApplication].servicesProvider = [[EncodeDecodeServiceProvider alloc] init];
+    [NSApp run];
 }

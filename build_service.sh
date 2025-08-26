@@ -4,10 +4,11 @@
 
 set -e
 
+mkdir -p build
+
 plutil Info.plist
 clang -g -framework AppKit services.m -o build/services
 
-mkdir -p build
 rm -rf build/services.app
 mkdir -p build/services.app/Contents/
 mkdir -p build/services.app/Contents/MacOS
