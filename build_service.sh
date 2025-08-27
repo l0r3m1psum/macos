@@ -9,10 +9,10 @@ mkdir -p build
 plutil Info.plist
 clang -g -framework AppKit services.m -o build/services
 
-rm -rf build/services.app
-mkdir -p build/services.app/Contents/
-mkdir -p build/services.app/Contents/MacOS
-cp -f Info.plist build/services.app/Contents
-cp -f build/services build/services.app/Contents/MacOS
+rm -rf build/services.service
+mkdir -p build/services.service/Contents/
+mkdir -p build/services.service/Contents/MacOS
+cp -f Info.plist build/services.service/Contents
+cp -f build/services build/services.service/Contents/MacOS
 
-/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f build/services.app
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f build/services.service

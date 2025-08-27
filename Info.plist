@@ -10,7 +10,10 @@
   <string>com.examplade.Services</string>
   <key>CFBundleVersion</key>
   <string>1.2.0</string>
+  <key>LSUIElement</key>
+  <true/>
 
+  <!-- https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SysServices/Articles/properties.html -->
   <key>NSServices</key>
   <array>
       <dict>
